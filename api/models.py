@@ -16,10 +16,10 @@ class Expense(models.Model):
     project = models.CharField(max_length=200, db_index=True, blank=False, null=False, default=None)   
 
     title = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(blank=False, null=False)
 
     date = models.DateTimeField('Start Date', blank=False, null=False, db_index=True)
-    receipt_image = models.ImageField(blank=True, null=True)
+    receipt_image = models.ImageField(blank=True, null=True, upload_to='expenses')
 
     status = models.CharField(max_length=100, choices=STATUS_CHOICES, default='Submitted')
 

@@ -136,7 +136,7 @@ PROJECT_APPS = (
 )
 
 SWAGGER_SETTINGS = {
-    'api_key': 'fb5df470df0fa3727c49a61608996618d0954289',
+    'api_key': 'a2ba63d3a8e1a905409a0e657f9ce353a08d6562',
     'info': {
         'contact': 'admin@tangentsolutions.co.za',
         'description': '...',
@@ -149,5 +149,5 @@ SWAGGER_SETTINGS = {
 STATIC_ROOT = '/srv/static/expenseservice/static/'
 
 ## Service base urls without a trailing slash:
-USERSERVICE_BASE_URL = 'http://staging.userservice.tangentme.com'
-PROJECTSERVICE_BASE_URL = "http://staging.projectservice.tangentme.com"
+USERSERVICE_BASE_URL = 'http://userservice.staging.tangentmicroservices.com'
+PROJECTSERVICE_BASE_URL = "http://projectservice.staging.tangentmicroservices.com"
